@@ -1,0 +1,32 @@
+[
+  {
+    "coffeeDrinkerId": 1,
+    "coffeeDrinkerName": "Leaf Rake",
+    "coffeeDrinkerCode": "GDN-0011",
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+  },
+  {
+    "coffeeDrinkerId": 2,
+    "coffeeDrinkerName": "Garden Cart",
+    "coffeeDrinkerCode": "GDN-0023",
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+  },
+  {
+    "coffeeDrinkerId": 5,
+    "coffeeDrinkerName": "Hammer",
+    "coffeeDrinkerCode": "TBX-0048",
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+  },
+  {
+    "coffeeDrinkerId": 8,
+    "coffeeDrinkerName": "Saw",
+    "coffeeDrinkerCode": "TBX-0022",
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+  },
+  {
+    "coffeeDrinkerId": 10,
+    "coffeeDrinkerName": "Video Game Controller",
+    "coffeeDrinkerCode": "GMG-0042",
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+  }
+]
