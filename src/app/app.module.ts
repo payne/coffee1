@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CoffeeDrinkerListComponent } from './coffee-drinker-list/coffee-drinker-list.component';
@@ -10,7 +11,8 @@ import { CoffeeDrinkerListComponent } from './coffee-drinker-list/coffee-drinker
     CoffeeDrinkerListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

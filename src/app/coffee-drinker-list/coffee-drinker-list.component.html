@@ -1,3 +1,40 @@
 <p>
   coffee-drinker-list works!
 </p>
+    <div class='table-responsive'>
+      <table class='table'
+             *ngIf='coffeeDrinkers && coffeeDrinkers.length'>
+        <thead>
+          <tr>
+            <th>
+              <button class='btn btn-primary'
+                      (click)='toggleImage()'>
+                {{showImage ? 'Hide' : 'Show'}} Image
+              </button>
+            </th>
+            <th>Product</th>
+            <th>Code</th>
+            <th>Available</th>
+            <th>Price</th>
+            <th>5 Star Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let drinker of coffeeDrinkers'>
+            <td>
+              <img *ngIf='showImage'
+                   [src]='drinker.imageUrl'
+                   [title]='drinker.coffeeDrinkerName'
+                   [style.width.px]='imageWidth'
+                   [style.margin.px]='imageMargin'>
+            </td>
+            <td>
+
+                {{ drinker.coffeeDrinkerName }}
+
+            </td>
+            <td>{{ drinker.coffeeDrinkerCode }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>

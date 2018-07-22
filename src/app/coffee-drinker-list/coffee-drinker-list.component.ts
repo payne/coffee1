@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CoffeeDrinkerService } from '../coffee-drinker.service';
+import { ICoffeeDrinker } from '../coffee-drinker';
 
 @Component({
   selector: 'app-coffee-drinker-list',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coffee-drinker-list.component.css']
 })
 export class CoffeeDrinkerListComponent implements OnInit {
+  coffeeDrinkers: ICoffeeDrinker[] = [];
+  errorMessage: string;
 
-  constructor() { }
+  constructor(private coffeeDrinkerService: CoffeeDrinkerService) { }
 
   ngOnInit() {
+    this.coffeeDrinkerService.getCoffeeDrinkers().subscribe(
+      drinkers => { this.coffeeDrinkers = drinkers; },
+      error => this.errorMessage = <any>error
+    );
   }
 
 }
