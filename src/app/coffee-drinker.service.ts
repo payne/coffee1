@@ -8,7 +8,7 @@ import { ICoffeeDrinker } from './coffee-drinker';
   providedIn: 'root'
 })
 export class CoffeeDrinkerService {
-  private coffeeDrinkersUrl = 'api/coffee-drinkers/coffee-drinkers.json';
+   private coffeeDrinkersUrl = 'http://mattpayne.org/coffee1/src/api/coffee-drinkers/coffee-drinkers.json';
 
   constructor(private http: HttpClient) { }
 
